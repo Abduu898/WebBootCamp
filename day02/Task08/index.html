@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodingPedia</title>
+    <link rel="stylesheet" href="codingpedia.css" />
+  </head>
+  <body>
+    <header class="box">
+      <h1>Welcome to CodingPedia!</h1>
+      <nav class="box">
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="php.html">PHP</a></li>
+          <li><a href="sql.html">SQL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="box">
+        <p>
+          CodingPedia is a collective encyclopedia project on the Internet
+          aiming to be universal and multi-lingual which functions as a wiki.<br />
+          CodingPedia has for goal to offer freely reusable objective and
+          verifiable content that anyone can modify and improve.
+        </p>
+
+        <form action="#" method="post">
+          <p>
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </p>
+
+          <p>
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="3" max="99" />
+          </p>
+
+          <p>
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              minlength="10"
+              maxlength="10"
+            />
+          </p>
+
+          <fieldset>
+            <legend>Sex</legend>
+            <!-- fieldset is for grouping related elements -->
+            <input type="radio" id="male" name="sex" value="male" checked />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female" />
+            <label for="female">Female</label>
+          </fieldset>
+
+          <p>
+            <label for="haircolor">Hair color</label>
+            <input type="color" id="haircolor" name="haircolor" />
+          </p>
+
+          <p>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </p>
+
+          <p>
+            <label for="technology">Technology</label>
+            <select id="technology" name="technology">
+              <option value="php">PHP</option>
+              <option value="sql">SQL</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="question">Question</label>
+            <textarea id="question" name="question" required></textarea>
+            <!-- text area for multi line input-->
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </main>
+
+      <aside class="box">
+        <p>
+          My name is Abderrahim Bahraoui. I'm a student at Epitech, learning
+          software engineering and cybersecurity.
+        </p>
+      </aside>
+    </div>
+    <div class="content">
+      <main class="box">...</main>
+      <aside class="box">...</aside>
+    </div>
+
+    <div class="moving_square"></div>
+
+    <footer class="box">...</footer>
+    <footer class="box">
+      <address>
+        Bahraoui Abderrahim<br />
+        42 Example Street<br />
+        Paris, France<br />
+        +33 6 12 34 56 78
+      </address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background-color: #d3d3d3;
+    font-family: sans-serif;
+}
+.box {
+    border: 2px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+/*flexbox*/
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content main {
+    flex: 0 0 80%;
+}
+
+.content aside {
+    flex: 1;
+}
