@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.blue {
+  background-color: #67b3dd;
+}
+.green {
+  background-color: #9ee062;
+}
+.yellow {
+  background-color: #fedf6b;
+}
+.purple {
+  background-color: #6b2683;
+}
+.pink {
+  background-color: #f03db5;
+}
+.red {
+  background-color: #fc302d;
+}
+
+header,
+nav,
+.first-section,
+.second-section article,
+footer {
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.second-section {
+  display: flex; /* flex means that the children of this element will be laid out in a row by default */
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Hide articles 3 onwards on mobile */
+.second-section article:nth-child(n + 3) {
+  display: none;
+}

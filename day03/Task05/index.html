@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — MaterializeCSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body class="grey lighten-4">
+    <!-- Step A-->
+    <div class="container-fluid blue darken-3">
+      <div class="section">
+        <h3 class="white-text center">BAHRAOUI Abderrahim</h3>
+        <h5 class="grey-text text-darken-2 white center">Student</h5>
+      </div>
+    </div>
+
+    <!-- Step B: About me -->
+    <div class="container">
+      <div class="section">
+        <h4 class="center">About me</h4>
+
+        <div class="row">
+          <!-- Story -->
+          <div class="col s12 m4">
+            <h5>Story</h5>
+            <p>
+              I'm a student at Epitech, learning software engineering and
+              cybersecurity. I enjoy solving problems, automating tasks, and
+              understanding how systems work.
+            </p>
+          </div>
+
+          <!--Step C: Profile  -->
+          <div class="col s12 m4">
+            <h5>Profile</h5>
+            <div class="card blue darken-3">
+              <div class="card-content white-text">
+                <span class="card-title">Abderrahim</span>
+                <div class="center">
+                  <img
+                    src="https://placehold.co/150"
+                    alt="Profile"
+                    class="circle responsive-img"
+                  />
+                </div>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/Abduu898">GitHub</a>
+                <a href="https://linkedin.com/in/abdrrahim-bahraoui"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--  Step D:  -->
+          <div class="col s12 m4">
+            <h5>Skills</h5>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Skill</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Python / C</td>
+                  <td>Comfortable with scripts and algorithms</td>
+                </tr>
+                <tr>
+                  <td>Bash</td>
+                  <td>Daily use in Linux</td>
+                </tr>
+                <tr>
+                  <td>HTML / CSS</td>
+                  <td>Building responsive pages</td>
+                </tr>
+                <tr>
+                  <td>Git</td>
+                  <td>Comfortable with branches and remote work</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Step E  -->
+    <div class="container">
+      <div class="section">
+        <h4 class="center">Portfolio</h4>
+        <div class="row">
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Project 1"
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Project 2"
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Project 3"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Step E: Last projects  -->
+    <div class="container">
+      <div class="section">
+        <h4 class="center">Last projects</h4>
+        <div class="row">
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Last 1"
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Last 2"
+              class="responsive-img"
+            />
+          </div>
+          <div class="col s12 m4">
+            <img
+              src="https://placehold.co/400x300"
+              alt="Last 3"
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Step F:   -->
+    <div class="container">
+      <div class="section">
+        <h4 class="center">Contact</h4>
+
+        <div class="row">
+          <form class="col s12">
+            <!-- Row 1: Lastname + Firstname (half each) -->
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="lastname" type="text" class="validate" />
+                <label for="lastname">Lastname</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="firstname" type="text" class="validate" />
+                <label for="firstname">Firstname</label>
+              </div>
+            </div>
+
+            <!-- Row 2: Email (full width) -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea
+                  id="message"
+                  class="materialize-textarea"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row center">
+              <button
+                class="btn waves-effect waves-light"
+                type="submit"
+                name="action"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

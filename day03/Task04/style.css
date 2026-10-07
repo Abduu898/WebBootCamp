@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.blue {
+  background-color: #67b3dd;
+}
+.green {
+  background-color: #9ee062;
+}
+.yellow {
+  background-color: #fedf6b;
+}
+.purple {
+  background-color: #6b2683;
+}
+.pink {
+  background-color: #f03db5;
+}
+.red {
+  background-color: #fc302d;
+}
+
+header,
+nav,
+.first-section,
+.second-section article,
+footer {
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.second-section {
+  display: flex; /* flex means that the children of this element will be laid out in a row by default */
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Hide articles 3 onwards on mobile */
+.second-section article:nth-child(n + 3) {
+  display: none;
+}
+/* Tablet layout*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Header: blue, aligned left, half width */
+  header {
+    width: 50%;
+  }
+  .second-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .second-section article {
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  .second-section article:nth-child(n + 3) {
+    display: block;
+  }
+  .second-section article:nth-child(n + 5) {
+    display: none;
+  }
+  /* Recolor articles 3 and 4 to purple */
+  .second-section article:nth-child(3),
+  .second-section article:nth-child(4) {
+    background-color: #6b2683;
+    color: white;
+  }
+}
+/* Desktop layout */
+@media (min-width: 1024px) {
+  header {
+    width: 50%;
+  }
+
+  .second-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .second-section article {
+    flex: 0 0 calc(33.333% - 7px);
+  }
+
+  .second-section article:nth-child(n + 3) {
+    display: block;
+  }
+
+  .second-section article:nth-child(n + 5) {
+    display: block;
+  }
+
+  /* Recolor articles 3 and 4 to purple */
+  .second-section article:nth-child(3),
+  .second-section article:nth-child(4) {
+    background-color: #6b2683;
+    color: white;
+  }
+
+  /* Recolor articles 5 and 6 to pink */
+  .second-section article:nth-child(5),
+  .second-section article:nth-child(6) {
+    background-color: #f03db5;
+    color: white;
+  }
+}
