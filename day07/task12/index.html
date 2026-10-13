@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 12</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Task 12</h1>
+    <form id="item-form">
+      <label for="item-text">Text</label>
+      <input id="item-text" name="text" type="text" required>
+
+      <label for="item-type">Type</label>
+      <select id="item-type" name="type">
+        <option value="note">Note</option>
+        <option value="email">Email</option>
+        <option value="todo">Todo</option>
+      </select>
+
+      <button type="submit">Add</button>
+    </form>
+    <ul id="item-list"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

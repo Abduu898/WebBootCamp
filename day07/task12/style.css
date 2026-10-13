@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+main {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  border: 2px solid;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.note {
+  border-color: blue;
+}
+
+.email {
+  border-color: green;
+}
+
+.todo {
+  border-color: red;
+}
